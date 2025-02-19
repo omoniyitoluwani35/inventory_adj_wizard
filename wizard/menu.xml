@@ -1,0 +1,17 @@
+<odoo>
+
+    <record id="action_inventory_adj_wizard" model="ir.actions.act_window">
+        <field name="name">Inventory Movement</field>
+        <field name="res_model">product.inv</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_inventory_menu"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="inventory_menu_action"
+              name="Inventory Movement"
+              parent="stock.menu_warehouse_report"
+              action="action_inventory_adj_wizard"/>
+</odoo>
+
+
